@@ -1,0 +1,285 @@
+@import '../../scss/variables';
+@import '../../scss/container';
+@import '../../scss/fonts';
+@import '../../scss/media';
+@import '../../scss/reset';
+
+.orderOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 1;
+  background: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(16px);
+  visibility: hidden;
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+.orderOverlayVisible {
+  visibility: visible;
+  & .orderDrawer {
+    transform: translateX(0);
+  }
+}
+
+.orderDrawer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  height: 100dvh;
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.orderDrawerHeader {
+  padding: 32px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.orderDrawerTitle {
+  font-family: 'inter-semibold', sans-serif;
+  font-size: 32px;
+  @include _479 {
+    font-size: 20px;
+  }
+}
+
+.orderDrawerClose {
+  cursor: pointer;
+  &:hover {
+    path {
+      @include mt(0.5s);
+      fill: #ff7010;
+    }
+  }
+  @include _479 {
+    width: 16px;
+  }
+}
+
+.orderDrawerMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0 20px 32px;
+}
+
+.orderDrawerBottom {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include _479 {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.orderDrawerTotal {
+  font-family: 'inter-semibold', sans-serif;
+  font-size: 20px;
+  color: #ff7010;
+  @include _479 {
+    font-size: 18px;
+  }
+}
+
+.orderDrawerButton {
+  display: inline-flex;
+  justify-content: center;
+  padding: 14px 0;
+  max-width: 230px;
+  width: 100%;
+  border: 1px solid #ff7010;
+  border-radius: 6px;
+  color: #ff7010;
+  font-family: 'pro-regular', sans-serif;
+  @include mt(0.5s);
+  @include _479 {
+    font-size: 14px;
+  }
+  &:hover {
+    background: #ff7010;
+    color: #fff;
+  }
+}
+
+.orderEmpty {
+  text-align: center;
+}
+
+.orderEmptyTitle {
+  margin: 30px 0 15px;
+  display: block;
+  font-size: 20px;
+}
+
+.orderEmptyText {
+  font-size: 18px;
+}
+
+.order {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #f0f0f0;
+  }
+}
+
+.orderItem {
+  display: flex;
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  position: relative;
+  @include _479 {
+    padding: 8px;
+  }
+}
+
+.orderClose {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  @include mt(0.5s);
+  opacity: 0.4;
+  @include _479 {
+    top: 8px;
+    right: 8px;
+  }
+  &:hover {
+    color: #ff7010;
+  }
+}
+
+.orderThumb {
+  @include _479 {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.orderPic {
+  max-width: 94px;
+  margin-right: 16px;
+  @include _479 {
+    max-width: 70px;
+    object-fit: contain;
+    margin-right: 8px;
+  }
+}
+
+.orderDesc {
+  width: 100%;
+}
+
+.orderTitle {
+  font-family: 'inter-semibold', sans-serif;
+  margin-bottom: 8px;
+  @include _479 {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+}
+
+.orderText {
+  font-size: 14px;
+  margin-bottom: 12px;
+  @include _479 {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+}
+
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderCount {
+  background: #ffeee2;
+  border-radius: 6px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  @include _479 {
+    width: 70px;
+  }
+}
+
+.orderMinus {
+  @include reset-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 2px;
+  padding: 5px;
+  color: #ff7010;
+  margin-top: -3px;
+  @include mt(0.5s);
+  @include _479 {
+    margin-top: -2px;
+  }
+  &:hover {
+    color: #191919;
+  }
+}
+
+.orderMinusDisabled {
+  color: #191919;
+}
+
+.orderAmount {
+  color: #ff7010;
+  font-family: 'inter-semibold', sans-serif;
+  cursor: default;
+  @include _479 {
+    font-size: 12px;
+  }
+}
+
+.orderPlus {
+  @include reset-button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8px;
+  height: 2px;
+  padding: 5px;
+  margin-top: 2px;
+  color: #ff7010;
+  @include mt(0.5s);
+  &:hover {
+    color: #191919;
+  }
+}
+
+.orderPrice {
+  font-family: 'inter-semibold', sans-serif;
+  color: #ff7010;
+  font-size: 18px;
+  @include _479 {
+    font-size: 14px;
+  }
+}

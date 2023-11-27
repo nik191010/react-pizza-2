@@ -1,0 +1,153 @@
+@import '../../scss/variables';
+@import '../../scss/container';
+@import '../../scss/fonts';
+@import '../../scss/media';
+@import '../../scss/reset';
+
+.filtersOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  z-index: 1;
+  background: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(16px);
+  visibility: hidden;
+  transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+  overflow: hidden;
+}
+
+.filtersOverlayVisible {
+  visibility: visible;
+  & .filters {
+    transform: translateX(0);
+  }
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  height: 100dvh;
+  max-width: 520px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.filtersHeader {
+  padding: 32px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filtersTitle {
+  font-family: 'inter-semibold', sans-serif;
+  font-size: 32px;
+  @include _479 {
+    font-size: 20px;
+  }
+}
+
+.filtersClose {
+  cursor: pointer;
+  &:hover {
+    path {
+      @include mt(0.5s);
+      fill: #ff7010;
+    }
+  }
+  @include _479 {
+    width: 16px;
+  }
+}
+
+.filtersMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 0 20px 32px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #f0f0f0;
+  }
+}
+
+.filtersGeneral {
+  margin-bottom: 24px;
+}
+
+.filtersMainTitle {
+  font-family: 'pro-regular', sans-serif;
+  color: #a5a5a5;
+  margin-bottom: 12px;
+}
+
+.filtersMainWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filtersMainItem {
+  padding: 11px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  cursor: pointer;
+  @include mt(0.5s);
+  @include _479 {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  &:hover {
+    background: #ff7010;
+    color: #fff;
+  }
+}
+
+.filtersMainItemActive {
+  background: #ff7010;
+  color: #fff;
+}
+
+.filtersButtons {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  @include _479 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.filtersButton {
+  display: inline-flex;
+  justify-content: center;
+  padding: 14px 0;
+  max-width: 230px;
+  width: 100%;
+  border: 1px solid #ff7010;
+  border-radius: 6px;
+  color: #ff7010;
+  font-family: 'pro-regular', sans-serif;
+  @include mt(0.5s);
+  @include _479 {
+    font-size: 14px;
+  }
+  &:hover {
+    background: #ff7010;
+    color: #fff;
+  }
+}

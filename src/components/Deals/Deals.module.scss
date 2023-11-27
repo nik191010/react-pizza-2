@@ -1,0 +1,66 @@
+@import '../../scss/variables';
+@import '../../scss/container';
+@import '../../scss/fonts';
+@import '../../scss/media';
+@import '../../scss/reset';
+
+.deals {
+  margin-bottom: 30px;
+  @include _991 {
+    margin: 0;
+  }
+}
+
+.dealsWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dealsItemWrap {
+  width: calc(100% / 4);
+  height: 343px;
+  padding: 0 15px;
+  cursor: default;
+  pointer-events: none;
+  @include _991 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  @include _479 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+}
+
+.dealsItem {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  @include mt(0.5s);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  // &:hover {
+  //   transform: translateY(-10px);
+  // }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dealsItemDesc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: 'inter-semibold', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  @include _767 {
+    font-size: 16px;
+    line-height: inherit;
+  }
+}

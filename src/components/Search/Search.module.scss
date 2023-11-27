@@ -1,0 +1,71 @@
+@import '../../scss/variables';
+@import '../../scss/container';
+@import '../../scss/fonts';
+@import '../../scss/media';
+@import '../../scss/reset';
+
+.searchWrap {
+  position: relative;
+  text-align: center;
+  max-width: 320px;
+  @include _440 {
+    margin: 10px 0 20px;
+  }
+}
+
+.searchMagnifier {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  path {
+    fill: #8a8a8a;
+  }
+}
+
+.searchInput {
+  border: 1px solid #7a7a7a80;
+  background: transparent;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 42px;
+  transition: all 0.15s ease-in-out;
+  color: #191919;
+  &:focus {
+    background: transparent;
+    color: #191919;
+    outline: none;
+  }
+  &::placeholder {
+    color: #7a7a7a80;
+  }
+  @include _479 {
+    font-size: 14px;
+  }
+}
+
+.searchClose {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  opacity: 0;
+  pointer-events: none;
+  @include mt(0.5s);
+  path {
+    fill: #ff7010;
+  }
+}
+
+.searchCloseActive {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

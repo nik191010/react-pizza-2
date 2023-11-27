@@ -1,0 +1,85 @@
+@import '../../scss/variables';
+@import '../../scss/container';
+@import '../../scss/fonts';
+@import '../../scss/media';
+@import '../../scss/reset';
+
+.pizza {
+  max-width: 284px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 10px 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include _479 {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.pizzaDesc {
+  padding: 0 20px;
+}
+.pizzaPic {
+  margin-bottom: 16px;
+}
+
+.pizzaThumb {
+  padding-left: 15px;
+}
+
+.pizzaTitle {
+  font-family: 'pro-semibold', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  @include _479 {
+    font-size: 18px;
+    line-height: inherit;
+    margin-bottom: 6px;
+  }
+}
+
+.pizzaText {
+  font-family: 'pro-regular';
+  margin: auto 0 16px 0;
+  @include _479 {
+    font-size: 14px;
+  }
+}
+
+.pizzaSelect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pizzaButton {
+  color: #fff;
+  background: #ff7010;
+  font-family: 'pro-regular';
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  cursor: pointer;
+  @include mt(0.5s);
+  @include _479 {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: rgb(232, 97, 0);
+  }
+}
+
+.pizzaPrice {
+  font-size: 18px;
+  font-family: 'pro-semibold';
+  color: #ff7010;
+  @include _479 {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,7 @@
+// COLORS
+$black: #191919;
+
+// TRANSITION
+@mixin mt($time) {
+  transition: all $time ease;
+}

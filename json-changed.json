@@ -1,0 +1,245 @@
+[
+  {
+    "id": 0,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF02823DBA2CB09EE4F90CBC5E227A.jpg",
+    "title": "Pepperoni Fresh",
+    "desc": "Pepperoni, green pepper, mozzarella, marinara sauce",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 10,
+    "category": 1,
+    "rating": 4,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 1,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF0286069492BA911C4D3B3376436C.jpg",
+    "title": "Cheese",
+    "desc": "Marinara sauce, extra mozzarella",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 12,
+    "category": 2,
+    "rating": 6,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF0286349B277780CB97A8544A6AEC.jpg",
+    "title": "Chicken BBQ",
+    "desc": "Extra chicken, mozzarella, bacon, red onions, bbq sauce",
+    "types": [
+      0
+    ],
+    "sizes": [
+      26,
+      40
+    ],
+    "price": 22,
+    "category": 1,
+    "rating": 4,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF028659F4831082FB3FF274D0B999.jpg",
+    "title": "Sweet And Sour Chicken Pizza",
+    "desc": "Bacon, garlic, pesto, chicken",
+    "types": [
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 15,
+    "category": 5,
+    "rating": 2,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF0C83F6699307BDCD7F4E443D87F8.jpg",
+    "title": "Cheeseburger Pizza",
+    "desc": "Ground Beef, onion, cheddar cheese",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 17,
+    "category": 3,
+    "rating": 8,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF240A0DF2BB18B0688A2088F016D8.jpg",
+    "title": "Double Pepperoni",
+    "desc": "Double pepperoni, marinara sauce, extra mozzarella",
+    "types": [
+      0
+    ],
+    "sizes": [
+      30,
+      40
+    ],
+    "price": 12,
+    "category": 4,
+    "rating": 2,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF0286B65F8F12A823048748DDE33D.jpg",
+    "title": "Pepperoni",
+    "desc": "Pepperoni, green pepper, mozzarella, marinara sauce",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 14,
+    "category": 1,
+    "rating": 9,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EE7D5D9DE56A7E9FAA011C820C6308.jpg",
+    "title": "Margherita",
+    "desc": "Mozzarella, parmesan, cherry tomatoes, basil leaves",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 11,
+    "category": 3,
+    "rating": 10,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF0285D9A4B265A7A78E39D98840B3.jpg",
+    "title": "Four seasons",
+    "desc": "Tomato paste, olive oil, parma ham, mozzarella",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 16,
+    "category": 4,
+    "rating": 10,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://media.dodostatic.com/image/r:292x292/11EF02846D3C184A867D674626FF4837.jpg",
+    "title": "Veggie 🌱",
+    "desc": "Green peppers, cherry tomatoes, sweet corn, mushrooms, red onions, mozzarella, marinara sauce",
+    "types": [
+      0,
+      1
+    ],
+    "sizes": [
+      26,
+      30,
+      40
+    ],
+    "price": 12,
+    "category": 2,
+    "rating": 7,
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 12.6,
+      "fat": 12.4,
+      "carbohydrates": 18.9,
+      "contains": "cereals containing gluten, milk, eggs"
+    }
+  }
+]

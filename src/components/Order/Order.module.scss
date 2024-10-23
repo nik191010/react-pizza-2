@@ -67,6 +67,18 @@
   }
 }
 
+.orderDrawerCloseWrap {
+  cursor: pointer;
+  &:hover {
+    svg {
+      path {
+        @include mt(0.5s);
+        fill: #ff7010;
+      }
+    }
+  }
+}
+
 .orderDrawerMain {
   display: flex;
   flex-direction: column;
